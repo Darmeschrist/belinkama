@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bélinkama</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="">
+    <!-- formulaire d'inscription -->
+    <div class="flex justify-center items-center h-full">
+        <div class=" flex flex-col rounded-xl bg-transparent p-6">
+            <h4 class="block text-xl font-medium text-slate-800 text-center">
+                S'inscrire Sur Bélinkama
+            </h4>
+            <p class="text-slate-500 italic text-center">
+                Veuillez s'il vous plait rentrez des informations exactes vous concernant, merci
+            </p>
+            <form class="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
+                <div class="mb-1 flex flex-col gap-6">
+                    <div class="w-full max-w-sm min-w-[200px]">
+                        <label class="block mb-2 text-sm text-slate-600 font-bold">
+                            Nom
+                        </label>
+                        <input type="text" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Nom" />
+                    </div>
+                    <div class="w-full max-w-sm min-w-[200px]">
+                        <label class="block mb-2 text-sm text-slate-600 font-bold">
+                            Prenom
+                        </label>
+                        <input type="text" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Prenom" />
+                    </div>
+                    <div class="w-full max-w-sm min-w-[200px]">
+                        <label class="block mb-2 text-sm text-slate-600 font-bold">
+                            Numéro de téléphone
+                        </label>
+                        <input type="tel" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="+241" />
+                    </div>
+                    <div class="w-full max-w-sm min-w-[200px]">
+                        <label class="block mb-2 text-sm text-slate-600 font-bold">
+                            Sexe
+                        </label>
+                        <!-- Champ de sélection pour le sexe -->
+                        <select class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow">
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+                    </div>
+                    <div class="w-full max-w-sm min-w-[200px]">
+                        <label class="block mb-2 text-sm text-slate-600 font-bold">
+                            Créer un mot de passe
+                        </label>
+                        <input type="password" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Votre mot de passe" />
+                    </div>
+                </div>
+
+                <button class="btn btn-secondary w-full" type="submit">
+                    S'inscrire
+                </button>
+                <p class="flex justify-center mt-6 text-sm text-slate-600 font-bold">
+                    J'ai déjà un compte
+                    <a href="#signup" class="ml-1 text-sm font-semibold text-slate-700 underline">
+                        Me connecter
+                    </a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
